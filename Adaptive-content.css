@@ -1,0 +1,480 @@
+body {
+    font-family: 'Quicksand';
+
+    --ful-width: 100%;
+    --spacer: 1em;
+
+    
+
+    
+}
+
+
+
+
+
+img{
+    width: 100%
+}
+
+
+/*bem mobile*/
+
+.container {
+    margin:1em;
+}
+
+.content-main {
+    display: flex;
+    flex-direction: column;
+}
+.content-main__news-wrapper{
+    position: relative;
+
+}
+.content-main__header{
+    margin-bottom: 1em;
+}
+
+
+
+
+.content-main__news{
+    margin-top: 1em;
+
+}
+.content-main .news-wrapper__label {
+    background-color: white;
+    position: absolute;
+    top:  calc( -0.83em - 1.15em / 3 - 1ex / 2 );
+    padding-right: 1em;
+    color: #999;
+
+   
+    
+
+}
+.content-main__news-wrapper {
+    margin-top:0.1em;
+}
+.content-main__news{
+    margin-top: 3em;
+    
+}
+
+
+         
+
+
+
+.content-main__news-wrapper{
+    border-top:1px solid #AAA;
+
+} 
+
+
+
+
+
+
+
+#advertising{
+    border: 5px solid green;
+    display: none;
+    
+
+}
+
+
+
+
+
+
+
+
+
+
+#advertising{
+    border: 1px solid red;
+    margin-right: 1em;
+    width: 14.6em;
+    height: 23em;
+    
+
+}
+
+
+
+
+#advertising img{
+    width: 14.6em;
+    height:23em;
+    
+    
+
+
+}
+#advertising .title{
+    line-height: 1em;
+    margin-top: -14em;
+    margin-left: 2em;
+    margin-right: 2em;
+    font-size: 2em;
+    color: white;
+
+
+
+}
+#advertising .refer {
+    margin-left: 1em;
+    margin-top: -2em;
+    
+   
+
+
+
+ }
+ .refer a{
+    border: 5px solid black;
+    width: 3em;
+    height: 3em;
+    
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+
+ }
+ #advertising .close{
+     font-size: 2em;
+     color: white;
+     margin-top: -14.5em;
+     margin-left: 6.5em;
+
+ }
+ .close a {
+    text-decoration: none;
+    color: white;
+
+
+ }
+
+
+
+
+
+ /*modal / ovrlay*/
+
+ #modal{
+     border: 2px solid black;
+     background-color:#678 ;
+     width: 200px;
+     height: 300px;
+     display: none;
+     position: fixed;
+     top: 30%;
+     bottom: 30%;
+     left: 40%;
+     right: 45%;
+     z-index: 1;
+     
+     
+     
+ }
+ #modal:target{
+     display: block;
+
+ }
+  .photo{
+      width: 200px;
+      height: 300px;
+      left: 40%;
+      right: 40%;
+      
+      
+      margin: auto;
+  }
+     
+ 
+ 
+ #modal h2{
+     margin-left: 3em;
+     margin-top: -12em;
+     
+     
+ }
+
+ #modal button{
+     margin-left: 4em;
+     
+
+ }
+ #modal a{
+     color: white;
+     text-decoration: none;
+     font-size: 2em;
+     position: relative;
+     
+     
+     top: -195px;
+     right: -10px;
+
+ }
+
+ #modal:target+.overlay{
+
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #000A;
+
+ }
+
+
+
+
+
+
+/*adaptiv - sm*/
+
+@media (min-width: 576px) { 
+    
+.container {
+    width: 92%;
+    margin: 0 auto;
+    
+}
+
+
+
+
+}
+
+
+ @media (min-width: 768px) { 
+    
+    .container {
+        width: 88%;
+        margin: 0 auto;
+    }
+     }
+
+     @media (min-width: 992px) { 
+    
+        .container {
+            width: 84%;
+            margin: 0 auto;
+        }
+
+        
+      
+
+
+         }
+
+         
+     @media (min-width: 1200px) { 
+    
+        .container {
+            width: 1000px;
+            margin: 0 auto;
+        }
+        .content-main__news-wrapper .content-main__news{
+
+            display: flex;
+            flex-wrap: wrap;
+
+        }
+        .content-main__news-wrapper .content-main__news picture{
+            width:calc(50% - 1em);
+        
+            margin-right: 1em;
+
+        }
+        .content-main__news-wrapper .content-main__news h2{
+            width: var(--ful-width);
+
+            
+        }
+        .content-main__news-wrapper .content-main__news .news__content {
+            width: 25%;
+
+        }
+        .content-main__news-wrapper .content-main__news .news__content p:first-child {
+            margin-top: 0;
+        }
+
+        .secondary-news-wrapper {
+            display: flex;
+            justify-content: space-between;
+
+        }
+        .secondary-news-wrapper article{
+            width: calc(( 100% - 1em ) / 2);
+
+        
+           
+
+        }
+
+
+
+        #advertising{
+            border: 1px solid red;
+            margin-right: 1em;
+            width: 14.6em;
+            height: 23em;
+            display: initial;
+            
+            
+            
+            
+        
+        }
+        
+
+
+
+        #advertising img{
+            width: 14.6em;
+            height:23em;
+            
+            
+        
+
+        }
+        #advertising .title{
+            margin-top: -11em;
+            margin-left: 2em;
+            font-size: 2em;
+            color: white;
+
+
+        
+        }
+        #advertising .refer {
+            margin-left: 4em;
+            margin-top: 3em;
+            
+           
+        
+
+
+         }
+         .refer a{
+            border: 5px solid black;
+            width: 3em;
+            height: 3em;
+            
+            text-decoration: none;
+            color: white;
+            font-size: 1.2em;
+
+         }
+         #advertising .close{
+             font-size: 2em;
+             color: white;
+             margin-top: -9em;
+             margin-left: 6.5em;
+
+         }
+         .close a {
+            text-decoration: none;
+            color: white;
+
+
+         }
+    
+
+
+
+
+
+
+
+
+
+         
+ #modal{
+    border: 2px solid black;
+    background-color:#678 ;
+    width: 200px;
+    height: 300px;
+    display: none;
+    position: fixed;
+    top: 30%;
+    bottom: 30%;
+    left: 40%;
+    right: 45%;
+    z-index: 1;
+    display: none;
+    
+    
+    
+}
+#modal:target{
+    display: block;
+    display: none;
+
+}
+ .photo{
+     width: 200px;
+     height: 300px;
+     left: 40%;
+     right: 40%;
+     
+     
+     margin: auto;
+     display: none;
+     
+ }
+    
+
+
+#modal h2{
+    margin-left: 3em;
+    margin-top: -12em;
+    display: none;
+    
+}
+
+#modal button{
+    margin-left: 4em;
+    display: none;
+
+}
+#modal a{
+    color: white;
+    text-decoration: none;
+    font-size: 2em;
+    position: relative;
+    
+    
+    top: -195px;
+    right: -10px;
+    display: none;
+
+}
+
+#modal:target+.overlay{
+
+   position: fixed;
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+   background-color: #000A;
+   display: none;
+
+}
+
+
+
+
+        }
+    
+     
+
+        
+        
